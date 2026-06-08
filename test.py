@@ -22,10 +22,10 @@ try:
 except AttributeError:
     pass
 
+from unsloth import FastLanguageModel, is_bfloat16_supported
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from transformers import TrainingArguments
 from trl import SFTTrainer, SFTConfig
-from unsloth import FastLanguageModel, is_bfloat16_supported
 import warnings
 warnings.filterwarnings('ignore')
 
